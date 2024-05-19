@@ -20,3 +20,6 @@ class Langue:
             return self.obtenir_traduction(self.langue_code, 'afternoon')
         else:
             return self.obtenir_traduction(self.langue_code, 'evening')
+
+    def feliciter(self):
+        return self.obtenir_traduction(self.langue_code, 'is_palindrome')
