@@ -5,6 +5,6 @@ class AnalyseurDeChaine:
 
     def analyser_chaine(self, chaine):
         if self.est_palindrome(chaine):
-            return f"{chaine[::-1]}, Bien dit !"
+            return f"Bonjour, {chaine[::-1]}, Bien dit !, Au Revoir"
         else:
-            return f"{chaine[::-1]}"
+            return f"Bonjour, {chaine[::-1]}, Au Revoir"
