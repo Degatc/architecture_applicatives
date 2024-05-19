@@ -9,3 +9,6 @@ class Langue:
         with open(chemin_fichier, 'r') as file:
             traductions = json.load(file)
         return traductions
+
+    def obtenir_traduction(self, language, cle):
+        return self.traductions.get(language, {}).get(cle, "")
