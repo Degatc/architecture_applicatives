@@ -12,3 +12,11 @@ class Langue:
 
     def obtenir_traduction(self, language, cle):
         return self.traductions.get(language, {}).get(cle, "")
+
+    def saluer(self, moment):
+        if 5 <= moment < 12:
+            return self.obtenir_traduction(self.langue_code, 'morning')
+        elif 12 <= moment < 18:
+            return self.obtenir_traduction(self.langue_code, 'afternoon')
+        else:
+            return self.obtenir_traduction(self.langue_code, 'evening')
