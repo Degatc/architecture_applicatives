@@ -28,3 +28,6 @@ curl -X POST http://localhost:5000/check -H "Content-Type: application/json; cha
 - Choix de votre language grâce aux headers `Accept-Language`
 - Choix de votre chaine de caractère à analyser dans le json avec la clé `text`, ici `chaine`
 
+## Schéma architecture
+
+![alt text](image.png) 
