@@ -1,5 +1,4 @@
 import json
-
 class Langue:
     def __init__(self, fichier_traduction, langue_code):
         self.traductions = self.charger_traductions(fichier_traduction)
@@ -23,3 +22,6 @@ class Langue:
 
     def feliciter(self):
         return self.obtenir_traduction(self.langue_code, 'is_palindrome')
+
+    def acquitter(self):
+        return self.obtenir_traduction(self.langue_code, 'exit')
